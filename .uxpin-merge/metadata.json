@@ -1,0 +1,1270 @@
+{
+  "categorizedComponents": [
+    {
+      "components": [
+        {
+          "defaultExported": true,
+          "documentation": {
+            "examples": []
+          },
+          "info": {
+            "dirPath": "src/components",
+            "implementation": {
+              "framework": "reactjs",
+              "lang": "typescript",
+              "path": "src/components/Accordion.tsx"
+            },
+            "presets": []
+          },
+          "name": "Accordion",
+          "presets": [],
+          "properties": [
+            {
+              "defaultValue": {
+                "value": "Default Label"
+              },
+              "description": "The panel label.",
+              "isRequired": true,
+              "name": "label",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Element or path used as the icon that will be placed next to panel label.",
+              "isRequired": false,
+              "name": "icon",
+              "type": {
+                "name": "any",
+                "structure": {}
+              }
+            },
+            {
+              "defaultValue": {
+                "value": "Assistive text"
+              },
+              "description": "Assistive text to be placed on the right side of the panel.",
+              "isRequired": false,
+              "name": "assistiveText",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            },
+            {
+              "defaultValue": {
+                "value": false
+              },
+              "description": "If true, the component will be disabled.",
+              "isRequired": false,
+              "name": "disabled",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "padding",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "xxsmall"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "xsmall"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "small"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "medium"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "large"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "xlarge"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "xxlarge"
+                      }
+                    },
+                    {
+                      "name": "shape",
+                      "structure": {}
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "The expanded panel of the accordion. This area can be used to render\r\ncustom content.",
+              "isRequired": true,
+              "name": "children",
+              "type": {
+                "name": "node",
+                "structure": {}
+              }
+            }
+          ],
+          "wrappers": []
+        },
+        {
+          "defaultExported": true,
+          "documentation": {
+            "examples": []
+          },
+          "info": {
+            "dirPath": "src/components",
+            "implementation": {
+              "framework": "reactjs",
+              "lang": "typescript",
+              "path": "src/components/AccordionGroup.tsx"
+            },
+            "presets": []
+          },
+          "name": "AccordionGroup",
+          "presets": [],
+          "properties": [
+            {
+              "description": "Initially active accordion, only when it is uncontrolled.",
+              "isRequired": false,
+              "name": "defaultIndexActive",
+              "type": {
+                "name": "number",
+                "structure": {}
+              }
+            },
+            {
+              "description": "The index of the active accordion. If undefined, the component will be uncontrolled and the active accordion will be managed internally by the component.\r\nIf null, the component will be controlled and all accordions will be closed.",
+              "isRequired": false,
+              "name": "indexActive",
+              "type": {
+                "name": "number",
+                "structure": {}
+              }
+            },
+            {
+              "defaultValue": {
+                "value": false
+              },
+              "description": "If true, the component will be disabled.",
+              "isRequired": false,
+              "name": "disabled",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "This function will be called when the user clicks on an accordion. The index of the clicked accordion will be passed as a parameter.",
+              "isRequired": false,
+              "name": "onActiveChange",
+              "type": {
+                "name": "func",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Size of the margin to be applied to the component ('xxsmall' | 'xsmall' | 'small' | 'medium' | 'large' | 'xlarge' | 'xxlarge').\r\nYou can pass an object with 'top', 'bottom', 'left' and 'right' properties in order to specify different margin sizes.",
+              "isRequired": false,
+              "name": "margin",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "xxsmall"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "xsmall"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "small"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "medium"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "large"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "xlarge"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "xxlarge"
+                      }
+                    },
+                    {
+                      "name": "shape",
+                      "structure": {}
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "Customized accordion(s) that are allowed inside an Accordion Group.",
+              "isRequired": true,
+              "name": "children",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "element",
+                      "structure": {}
+                    },
+                    {
+                      "name": "array",
+                      "structure": {}
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "wrappers": []
+        },
+        {
+          "defaultExported": true,
+          "documentation": {
+            "examples": []
+          },
+          "info": {
+            "dirPath": "src/components",
+            "implementation": {
+              "framework": "reactjs",
+              "lang": "typescript",
+              "path": "src/components/AccordionGroupItem.tsx"
+            },
+            "presets": []
+          },
+          "name": "AccordionGroupItem",
+          "presets": [],
+          "properties": [
+            {
+              "defaultValue": {
+                "value": "Default Label"
+              },
+              "description": "The panel label.",
+              "isRequired": true,
+              "name": "label",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Element or path used as the icon that will be placed next to panel label.",
+              "isRequired": false,
+              "name": "icon",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "string",
+                      "structure": {}
+                    },
+                    {
+                      "name": "unsupported",
+                      "structure": {
+                        "raw": "intersection"
+                      }
+                    },
+                    {
+                      "name": "unsupported",
+                      "structure": {
+                        "raw": "intersection"
+                      }
+                    },
+                    {
+                      "name": "unsupported",
+                      "structure": {
+                        "raw": "intersection"
+                      }
+                    },
+                    {
+                      "name": "unsupported",
+                      "structure": {
+                        "raw": "intersection"
+                      }
+                    },
+                    {
+                      "name": "shape",
+                      "structure": {}
+                    },
+                    {
+                      "name": "shape",
+                      "structure": {}
+                    },
+                    {
+                      "name": "shape",
+                      "structure": {}
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "defaultValue": {
+                "value": "Assistive text"
+              },
+              "description": "Assistive text to be placed on the right side of the panel.",
+              "isRequired": false,
+              "name": "assistiveText",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            },
+            {
+              "defaultValue": {
+                "value": false
+              },
+              "description": "If true, the component will be disabled.",
+              "isRequired": false,
+              "name": "disabled",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "padding",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "xxsmall"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "xsmall"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "small"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "medium"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "large"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "xlarge"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "xxlarge"
+                      }
+                    },
+                    {
+                      "name": "shape",
+                      "structure": {}
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "The expanded panel of the accordion. This area can be used to render\r\ncustom content.",
+              "isRequired": true,
+              "name": "children",
+              "type": {
+                "name": "node",
+                "structure": {}
+              }
+            }
+          ],
+          "wrappers": []
+        },
+        {
+          "defaultExported": true,
+          "documentation": {
+            "examples": []
+          },
+          "info": {
+            "dirPath": "src/components",
+            "implementation": {
+              "framework": "reactjs",
+              "lang": "typescript",
+              "path": "src/components/Button.tsx"
+            },
+            "presets": []
+          },
+          "name": "Button",
+          "presets": [],
+          "properties": [
+            {
+              "defaultValue": {
+                "value": "defaultLabel"
+              },
+              "description": "Text to be placed in the button.",
+              "isRequired": false,
+              "name": "label",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            },
+            {
+              "defaultValue": {
+                "value": "primary"
+              },
+              "description": "The available button modes.",
+              "isRequired": false,
+              "name": "mode",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "primary"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "secondary"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "text"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "defaultValue": {
+                "value": false
+              },
+              "description": "If true, the component will be disabled.",
+              "isRequired": false,
+              "name": "disabled",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "defaultValue": {
+                "value": "before"
+              },
+              "description": "Whether the icon should appear after or before the label.",
+              "isRequired": false,
+              "name": "iconPosition",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "before"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "after"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "defaultValue": {
+                "value": "button"
+              },
+              "description": "'type' html prop of the button.",
+              "isRequired": false,
+              "name": "type",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "button"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "reset"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "submit"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "Element or path used as the icon that will be placed next to the label.",
+              "isRequired": false,
+              "name": "icon",
+              "type": {
+                "name": "any",
+                "structure": {}
+              }
+            },
+            {
+              "description": "This function will be called when the user clicks the button.",
+              "isRequired": false,
+              "name": "onClick",
+              "type": {
+                "name": "func",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Size of the margin to be applied to the component ('xxsmall' | 'xsmall' | 'small' | 'medium' | 'large' | 'xlarge' | 'xxlarge').\r\nYou can pass an object with 'top', 'bottom', 'left' and 'right' properties in order to specify different margin sizes.",
+              "isRequired": false,
+              "name": "margin",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "xxsmall"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "xsmall"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "small"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "medium"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "large"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "xlarge"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "xxlarge"
+                      }
+                    },
+                    {
+                      "name": "shape",
+                      "structure": {}
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "defaultValue": {
+                "value": "fillParent"
+              },
+              "description": "Size of the component.",
+              "isRequired": false,
+              "name": "size",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "small"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "medium"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "large"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "fillParent"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "fitContent"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "defaultValue": {
+                "value": 0
+              },
+              "description": "Value of the tabindex attribute.",
+              "isRequired": false,
+              "name": "tabIndex",
+              "type": {
+                "name": "number",
+                "structure": {}
+              }
+            }
+          ],
+          "wrappers": []
+        }
+      ],
+      "name": "Components"
+    },
+    {
+      "components": [
+        {
+          "defaultExported": true,
+          "documentation": {
+            "examples": []
+          },
+          "info": {
+            "dirPath": "src/components",
+            "implementation": {
+              "framework": "reactjs",
+              "lang": "typescript",
+              "path": "src/components/Inset.tsx"
+            },
+            "presets": []
+          },
+          "name": "Inset",
+          "presets": [],
+          "properties": [
+            {
+              "description": "Applies the spacing scale to all sides.",
+              "isRequired": false,
+              "name": "space",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "0rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "0.125rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "0.25rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "0.5rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "1rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "1.5rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "2rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "3rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "4rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "5rem"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "Applies the spacing scale to the left and right sides.",
+              "isRequired": false,
+              "name": "horizontal",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "0rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "0.125rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "0.25rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "0.5rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "1rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "1.5rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "2rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "3rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "4rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "5rem"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "Applies the spacing scale to the top and bottom sides.",
+              "isRequired": false,
+              "name": "vertical",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "0rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "0.125rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "0.25rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "0.5rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "1rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "1.5rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "2rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "3rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "4rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "5rem"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "Applies the spacing scale to the top side.",
+              "isRequired": false,
+              "name": "top",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "0rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "0.125rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "0.25rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "0.5rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "1rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "1.5rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "2rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "3rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "4rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "5rem"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "Applies the spacing scale to the right side.",
+              "isRequired": false,
+              "name": "right",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "0rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "0.125rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "0.25rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "0.5rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "1rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "1.5rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "2rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "3rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "4rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "5rem"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "Applies the spacing scale to the bottom side.",
+              "isRequired": false,
+              "name": "bottom",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "0rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "0.125rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "0.25rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "0.5rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "1rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "1.5rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "2rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "3rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "4rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "5rem"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "Applies the spacing scale to the left side.",
+              "isRequired": false,
+              "name": "left",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "0rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "0.125rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "0.25rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "0.5rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "1rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "1.5rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "2rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "3rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "4rem"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "5rem"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "Custom content inside the inset.",
+              "isRequired": true,
+              "name": "children",
+              "type": {
+                "name": "node",
+                "structure": {}
+              }
+            }
+          ],
+          "wrappers": []
+        }
+      ],
+      "name": "Layout"
+    }
+  ],
+  "name": "halstack-react",
+  "vcs": {
+    "branchName": "master",
+    "commitHash": "b7052bad19674fa55f31e6aaf33bd1c26708e8e4",
+    "paths": {
+      "configPath": "C:\\Users\\jcheng42\\OneDrive - DXC Production\\Desktop\\Projects\\halstack-wrapper\\uxpin.config.js",
+      "projectRoot": "C:\\Users\\jcheng42\\OneDrive - DXC Production\\Desktop\\Projects\\halstack-wrapper"
+    }
+  }
+}
